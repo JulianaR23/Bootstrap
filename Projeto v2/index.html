@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand text-light" href="index.html">Patronum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="filmes.html">Filmes<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Elenco
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Harry Potter</a>
+                        <a class="dropdown-item" href="#">Animais Fantásticos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="contato.html">Contato</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Menu -->
+
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.imgur.com/x3pQeFz.png" class="d-block w-100" alt="casas de Hogwarts">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.imgur.com/ejlsWv7.png" class="d-block w-100" alt="Hogwarts">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.imgur.com/HWnRA9J.png" class="d-block w-100" alt="harry e seus amigos">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+    <!-- carousel -->
+
+    <!-- jumbotron -->
+    <div id="bgcor" class="jumbotron jumbotron-fluid bg-secondary">
+        <div class="container">
+            <h1 class="display-4">Bem vindo ao PATRONUM </h1>
+            <p class="lead">Seu melhor site para saber tudo do mundo de Harry Potter! Veja abaixo todas as casas de
+                Hogwarts e seus histórias!</p>
+        </div>
+    </div>
+    <!-- jumbotron -->
+
+    <!-- cards -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://i.imgur.com/SvkLPIX.png" class="card-img-top" alt="imagem da casa Grifinória">
+                    <div class="card-body">
+                        <h5 class="card-title">GRIFINÓRIA</h5>
+                        <p class="card-text">Lar dos bravos e cavalheiros, o símbolo da Grifinória apresenta em seu
+                            estandarte um orgulhoso leão, acompanhado das cores vermelha e amarelo-dourada. A Casa
+                            valoriza feitos de coragem e superação pessoal que costumam ser realizados por altruísmo.
+                            Seus estudantes tendem a ser bastante aventureiros, mas se destacam, sobretudo, pela
+                            lealdade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://i.imgur.com/BAhUJ8o.png" class="card-img-top" alt="imagem da casa Lufa-Lufa">
+                    <div class="card-body">
+                        <h5 class="card-title">LUFA-LUFA</h5>
+                        <p class="card-text">Os estudantes da Lufa-Lufa são dedicados, pacientes e honestos. Suas
+                            admiráveis características os tornam trabalhadores árduos e modestos, sendo receptivos a
+                            todos os demais tipos de bruxos. Por outro lado, o excesso dessas qualidades pode se tornar
+                            um ponto negativo: justamente por sua flexibilidade e compreensão, os alunos podem ser
+                            complacentes e muito dependentes de outras pessoas, tornando-se ingênuos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://i.imgur.com/bHAJHz3.png" class="card-img-top" alt="imagem da casa corvinal">
+                    <div class="card-body">
+                        <h5 class="card-title">CORVINAL</h5>
+                        <p class="card-text">Os bruxos pertencentes à Corvinal se destacam por sua exímia inteligência.
+                            Nesse contexto, suas principais características são relacionadas a sabedoria, criatividade e
+                            personalidade única, o que garante a eles certa excentricidade. Contudo, a valorização
+                            exacerbada do academicismo pode torná-los perfeccionistas, frios, insensíveis e
+                            demasiadamente críticos em relação às outras Casas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://i.imgur.com/jVqKr6q.png" class="card-img-top" alt="imagem da casa sonserina">
+                    <div class="card-body">
+                        <h5 class="card-title">SONSERINA</h5>
+                        <p class="card-text">Sonserina é a Casa com a pior reputação. Parte dessa fama é, de certa
+                            forma, justificável, já que ela abrigou alguns dos maiores bruxos das trevas enquanto ainda
+                            eram estudantes. Entretanto, muitos de seus membros têm boas qualidades que redimem a má
+                            fama, o que os torna grandes alunos e líderes natos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cards -->
+
+        <!-- Texto e Video -->
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+                <h3>TUDO sobre o mundo Bruxo</h3>
+                <p>Wingardium Leviossssaaaaaaa! Hoje você irá conhecer toda a história do bruxo mais famoso de todos os
+                    tempos! Começou nos livros, foi para o cinema, para os games e até para os parques de diversões.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio distinctio minus eos, voluptatibus,
+                    laudantium temporibus veritatis nemo quisquam nihil corrupti dolorem sapiente fugiat consequatur
+                    accusantium vitae. Consequatur quibusdam obcaecati ducimus!</p>
+            </div>
+            <div class="col-md-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WdCTOmeN7sc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- Texto e Video -->
+
+        <!-- footer -->
+        <hr>
+        <footer>
+            <div class="row mb-3 ">
+                <div class="col-md-12 d-flex justify-content-center">
+
+                    <a href="https://www.linkedin.com/in/juliana-souza-46a36b197/" target="_blank" class="p-3">
+                        <img class="tm" src="https://i.imgur.com/RWRwkO3.png" alt="logo do linkedin">
+                    </a>
+                    <a href="https://github.com/JulianaR23" target="_blank" class="p-3">
+                        <img class="tm" src="https://i.imgur.com/dHIGIMn.png" alt="logo do  Github">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">
+                        Feito por Juliana Souza &copy;
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
